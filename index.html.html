@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 Sweepstakes</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #D4A017;
+    --gold-light: #F0C040;
+    --green: #1A472A;
+    --green-mid: #2D6A4F;
+    --cream: #F5F0E8;
+    --pitch: #2D5A1B;
+    --red: #C0392B;
+    --ink: #1A1A2E;
+    --white: #FAFAF5;
+  }
+
+  body {
+    background-color: var(--ink);
+    color: var(--cream);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(ellipse at 50% 0%, #2D6A4F33 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, #D4A01722 0%, transparent 50%),
+                var(--ink);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 59px, #FFFFFF08 60px),
+      repeating-linear-gradient(90deg, transparent, transparent 59px, #FFFFFF08 60px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .trophy-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 30px #D4A01780);
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px #D4A01760); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 40px #D4A017A0); }
+  }
+
+  .eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 12vw, 140px);
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 0 0 80px #D4A01730;
+  }
+
+  .hero h1 span {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.65em;
+  }
+
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #B0B8C0;
+    font-weight: 300;
+    max-width: 500px;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .badge {
+    background: #FFFFFF10;
+    border: 1px solid #FFFFFF20;
+    border-radius: 100px;
+    padding: 8px 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold-light);
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF40;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* ─── LAYOUT ─── */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ─── SECTION DIVIDER ─── */
+  .section {
+    padding: 80px 0;
+    border-top: 1px solid #FFFFFF10;
+  }
+
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 6vw, 64px);
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  /* ─── OVERVIEW CARDS ─── */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: #FFFFFF15;
+    border: 1px solid #FFFFFF15;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  .overview-card {
+    background: #0F1020;
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .overview-card .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .overview-card .label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8090A0;
+    margin-top: 4px;
+  }
+
+  /* ─── PICK SYSTEM ─── */
+  .picks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 600px) { .picks-grid { grid-template-columns: 1fr; } }
+
+  .pick-card {
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pick-card.top {
+    background: linear-gradient(135deg, #1A3A2A, #2D6A4F40);
+    border: 1px solid #2D6A4F80;
+  }
+
+  .pick-card.bottom {
+    background: linear-gradient(135deg, #1A1A3A, #2D2D6A40);
+    border: 1px solid #2D2D6A80;
+  }
+
+  .pick-card::before {
+    content: attr(data-tier);
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: #FFFFFF06;
+    pointer-events: none;
+  }
+
+  .pick-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .pick-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .pick-desc {
+    font-size: 14px;
+    color: #9AAABB;
+    line-height: 1.5;
+  }
+
+  /* ─── SCORING TABLE ─── */
+  .scoring-grid {
+    margin-top: 32px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .score-row {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    align-items: center;
+    background: #FFFFFF06;
+    border: 1px solid #FFFFFF10;
+    border-radius: 8px;
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .score-row.positive { border-left: 3px solid #27AE60; }
+  .score-row.negative { border-left: 3px solid var(--red); }
+  .score-row.neutral { border-left: 3px solid var(--gold); }
+
+  .score-label { font-size: 15px; color: var(--cream); }
+  .score-label small { display: block; font-size: 12px; color: #8090A0; margin-top: 2px; }
+
+  .score-pts {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    text-align: right;
+  }
+
+  .score-pts.pos { color: #27AE60; }
+  .score-pts.neg { color: var(--red); }
+  .score-pts.gold { color: var(--gold-light); }
+
+  /* ─── EXAMPLE MATCH ─── */
+  .match-example {
+    margin-top: 40px;
+    background: #0A0F1A;
+    border: 1px solid #FFFFFF15;
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  .match-example h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .match-scoreline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .match-team { text-align: center; }
+  .match-team .flag { font-size: 36px; }
+  .match-team .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 6px;
+  }
+
+  .match-score {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: var(--gold-light);
+    letter-spacing: 4px;
+  }
+
+  .breakdown-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .breakdown-card {
+    background: #FFFFFF08;
+    border-radius: 10px;
+    padding: 18px;
+  }
+
+  .breakdown-card .team-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8090A0;
+    margin-bottom: 12px;
+  }
+
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #B0C0D0;
+    padding: 4px 0;
+    border-bottom: 1px solid #FFFFFF08;
+  }
+
+  .breakdown-item:last-child { border-bottom: none; }
+
+  .breakdown-total {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #FFFFFF20;
+  }
+
+  /* ─── KNOCKOUT ─── */
+  .ko-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .ko-card {
+    background: #FFFFFF06;
+    border: 1px solid #FFFFFF12;
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .ko-card .round {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .ko-card .pts {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .ko-card .desc {
+    font-size: 12px;
+    color: #7080A0;
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  /* ─── SUPER CHIP ─── */
+  .superchip-box {
+    margin-top: 32px;
+    background: linear-gradient(135deg, #1A1200, #2A2000);
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .superchip-box::before {
+    content: '⚡';
+    position: absolute;
+    font-size: 180px;
+    right: -20px;
+    top: -30px;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+
+  .superchip-box h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+  }
+
+  .superchip-box p { font-size: 15px; color: #B0A080; line-height: 1.7; margin-bottom: 14px; }
+  .superchip-box ul { list-style: none; }
+  .superchip-box li { font-size: 14px; color: #9A9070; padding: 6px 0; padding-left: 18px; position: relative; }
+  .superchip-box li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+
+  /* ─── NEW IDEAS ─── */
+  .ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .idea-card {
+    border-radius: 14px;
+    padding: 26px 22px;
+    border: 1px solid #FFFFFF12;
+    background: #0D1120;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .idea-card:hover { transform: translateY(-3px); border-color: var(--gold); }
+
+  .idea-card .idea-emoji {
+    font-size: 32px;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .idea-card h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .idea-card p { font-size: 14px; color: #8A9AAA; line-height: 1.6; }
+
+  .idea-card .tag {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold-light)40;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  /* ─── TIMELINE ─── */
+  .timeline { margin-top: 32px; position: relative; padding-left: 32px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+
+  .tl-item { margin-bottom: 32px; position: relative; }
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 10px var(--gold);
+  }
+
+  .tl-item .tl-when {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .tl-item .tl-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .tl-item p { font-size: 14px; color: #8090A0; }
+
+  /* ─── PRIZE IDEAS ─── */
+  .prize-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 20px;
+    border-radius: 10px;
+    background: #FFFFFF05;
+    border: 1px solid #FFFFFF0D;
+    margin-top: 12px;
+  }
+
+  .prize-rank {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #FFFFFF20;
+    min-width: 40px;
+    text-align: center;
+  }
+
+  .prize-rank.gold-rank { color: #D4A017; }
+  .prize-rank.silver-rank { color: #A0A8B0; }
+  .prize-rank.bronze-rank { color: #A06030; }
+
+  .prize-text h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .prize-text p { font-size: 13px; color: #8090A0; margin-top: 2px; }
+
+  /* ─── RULES QUICK REF ─── */
+  .rule-list { margin-top: 28px; counter-reset: rule-counter; }
+
+  .rule-item {
+    display: flex;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #FFFFFF0D;
+    counter-increment: rule-counter;
+  }
+
+  .rule-item::before {
+    content: counter(rule-counter, decimal-leading-zero);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--gold);
+    min-width: 36px;
+    line-height: 1;
+  }
+
+  .rule-item p { font-size: 14px; color: #A0B0C0; line-height: 1.6; }
+  .rule-item strong { color: var(--white); font-weight: 600; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    text-align: center;
+    padding: 60px 24px;
+    border-top: 1px solid #FFFFFF10;
+    color: #404860;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  footer strong { color: var(--gold); font-style: normal; }
+
+  /* ─── HIGHLIGHT BOX ─── */
+  .callout {
+    background: linear-gradient(135deg, #0A1A10, #152510);
+    border: 1px solid #2D6A4F60;
+    border-left: 3px solid #27AE60;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #90C0A0;
+    line-height: 1.7;
+  }
+
+  .callout strong { color: #B0E0B0; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 600px) {
+    .breakdown-grid { grid-template-columns: 1fr; }
+    .match-score { font-size: 40px; }
+    .hero h1 { font-size: 72px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="trophy-icon">🏆</div>
+  <p class="eyebrow">Official Rulebook & Guide</p>
+  <h1>World Cup<span>Sweepstakes 2026</span></h1>
+  <p class="hero-sub">The definitive guide to your private sweepstakes. May the best picks win.</p>
+  <div class="badge-row">
+    <span class="badge">USA · Canada · Mexico</span>
+    <span class="badge">48 Teams</span>
+    <span class="badge">~10 Players</span>
+  </div>
+  <div class="scroll-hint">▼ &nbsp; Read the Rules</div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">At a Glance</p>
+    <h2 class="section-title">How It Works</h2>
+    <p style="color:#8090A0; max-width:600px; font-size:15px;">A two-stage sweepstakes running through the entire World Cup — from the Group Stage all the way to the Final. Points accumulate throughout. The highest total wins.</p>
+    <div class="overview-grid">
+      <div class="overview-card">
+        <div class="num">2</div>
+        <div class="label">Stages</div>
+      </div>
+      <div class="overview-card">
+        <div class="num">4</div>
+        <div class="label">Picks Per Player</div>
+      </div>
+      <div class="overview-card">
+        <div class="num">2</div>
+        <div class="label">Super Chips</div>
+      </div>
+      <div class="overview-card">
+        <div class="num">1</div>
+        <div class="label">Wildcard Joker</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PICKS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Stage 1 — Group Stage</p>
+    <h2 class="section-title">Your Picks</h2>
+    <p style="color:#8090A0; max-width:580px; font-size:15px;">Each player selects <strong style="color:var(--white)">2 teams</strong> before the Group Stage begins — one from the top tier, one from the bottom tier. This ensures no one gets stuck with two giants or two minnows.</p>
+
+    <div class="picks-grid">
+      <div class="pick-card top" data-tier="T1">
+        <p class="pick-label">Pick One</p>
+        <h3 class="pick-title">Top Tier Teams</h3>
+        <p class="pick-desc">FIFA World Ranking <strong style="color:var(--white)">#1–#16</strong> among qualified teams. The favourites, the giants. High floor, lower upside.</p>
+      </div>
+      <div class="pick-card bottom" data-tier="T2">
+        <p class="pick-label">Pick Two</p>
+        <h3 class="pick-title">Lower Tier Teams</h3>
+        <p class="pick-desc">FIFA World Ranking <strong style="color:var(--white)">#17–#48</strong> among qualified teams. The underdogs. High risk, potentially massive upside.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Draft Order:</strong> Use a random draw to determine player pick order. Player 1 picks their Top Tier team first, then continues in reverse (snake draft) for the Lower Tier picks. This keeps things competitive and fair.
+    </div>
+  </div>
+</section>
+
+<!-- KNOCKOUT PICKS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Stage 2 — Knockout Stage</p>
+    <h2 class="section-title">Knockout Picks</h2>
+    <p style="color:#8090A0; max-width:580px; font-size:15px;">Once the Group Stage ends and the Round of 32 is set, each player picks <strong style="color:var(--white)">2 additional teams</strong> for the Knockout stage — again using the tiered draft. These teams only earn points from Round of 32 onwards.</p>
+    <div class="callout" style="border-left-color: var(--gold)">
+      <strong>Note:</strong> You can pick a team you already hold in the Group Stage! Owning the same team in both stages lets points double-stack. But it locks you out of another pick, so weigh it carefully.
+    </div>
+  </div>
+</section>
+
+<!-- SCORING -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Points System</p>
+    <h2 class="section-title">Scoring</h2>
+    <p style="color:#8090A0; max-width:580px; font-size:15px;">Points are applied for every match your teams play. Both stages use the same core system. Knockout stage has bonus multipliers.</p>
+
+    <div class="scoring-grid" style="margin-top: 32px;">
+      <div class="score-row positive">
+        <div class="score-label">Win <small>Your team wins in 90 mins or after extra time</small></div>
+        <div class="score-pts pos">+3</div>
+      </div>
+      <div class="score-row neutral">
+        <div class="score-label">Draw <small>After 90 mins (group stage only)</small></div>
+        <div class="score-pts gold">+1</div>
+      </div>
+      <div class="score-row negative">
+        <div class="score-label">Loss <small>No points for a loss</small></div>
+        <div class="score-pts neg">0</div>
+      </div>
+      <div class="score-row positive">
+        <div class="score-label">Goal Scored <small>Per goal your team scores</small></div>
+        <div class="score-pts pos">+1</div>
+      </div>
+      <div class="score-row negative">
+        <div class="score-label">Goal Conceded <small>Per goal your team concedes</small></div>
+        <div class="score-pts neg">−1</div>
+      </div>
+      <div class="score-row neutral">
+        <div class="score-label">Clean Sheet Bonus <small>Your team keeps a clean sheet in any game</small></div>
+        <div class="score-pts gold">+2</div>
+      </div>
+    </div>
+
+    <!-- Match Example -->
+    <div class="match-example">
+      <h3>Worked Example</h3>
+      <div class="match-scoreline">
+        <div class="match-team">
+          <div class="flag">🇧🇷</div>
+          <div class="name">Brazil</div>
+        </div>
+        <div class="match-score">3 – 1</div>
+        <div class="match-team">
+          <div class="flag">🇲🇽</div>
+          <div class="name">Mexico</div>
+        </div>
+      </div>
+      <div class="breakdown-grid">
+        <div class="breakdown-card">
+          <div class="team-name">🇧🇷 Brazil Player</div>
+          <div class="breakdown-item"><span>Win</span><span style="color:#27AE60">+3</span></div>
+          <div class="breakdown-item"><span>Goals scored (×3)</span><span style="color:#27AE60">+3</span></div>
+          <div class="breakdown-item"><span>Goals conceded (×1)</span><span style="color:#C0392B">−1</span></div>
+          <div class="breakdown-total"><span>Total</span><span style="color:#27AE60">+5 pts</span></div>
+        </div>
+        <div class="breakdown-card">
+          <div class="team-name">🇲🇽 Mexico Player</div>
+          <div class="breakdown-item"><span>Loss</span><span>0</span></div>
+          <div class="breakdown-item"><span>Goals scored (×1)</span><span style="color:#27AE60">+1</span></div>
+          <div class="breakdown-item"><span>Goals conceded (×3)</span><span style="color:#C0392B">−3</span></div>
+          <div class="breakdown-total"><span>Total</span><span style="color:#C0392B">−2 pts</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOCKOUT BONUSES -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Knockout Stage</p>
+    <h2 class="section-title">Round Bonuses</h2>
+    <p style="color:#8090A0; max-width:580px; font-size:15px;">In the Knockout stage, base match points are multiplied by a round factor. The deeper your team goes, the more each point is worth.</p>
+    <div class="ko-grid">
+      <div class="ko-card">
+        <div class="round">Round of 32</div>
+        <div class="pts">1×</div>
+        <div class="desc">Standard multiplier. No bonus.</div>
+      </div>
+      <div class="ko-card">
+        <div class="round">Round of 16</div>
+        <div class="pts">1.5×</div>
+        <div class="desc">50% boost on all match points.</div>
+      </div>
+      <div class="ko-card">
+        <div class="round">Quarter-Final</div>
+        <div class="pts">2×</div>
+        <div class="desc">Double points on every goal & result.</div>
+      </div>
+      <div class="ko-card">
+        <div class="round">Semi-Final</div>
+        <div class="pts">3×</div>
+        <div class="desc">Triple. Things get serious.</div>
+      </div>
+      <div class="ko-card">
+        <div class="round">Final</div>
+        <div class="pts">5×</div>
+        <div class="desc">Five times. The winner-takes-all moment.</div>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>Penalty Shootout Rule:</strong> If a knockout match goes to penalties, the winning team scores +3 pts (result points only). No goal/concede points are added for penalty goals — only the result bonus applies.
+    </div>
+  </div>
+</section>
+
+<!-- SUPER CHIP -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Special Powers</p>
+    <h2 class="section-title">Super Chips</h2>
+    <div class="superchip-box">
+      <h3>⚡ The Super Chip</h3>
+      <p>Each player receives <strong>2 Super Chips</strong> — one valid in the Group Stage, one valid in the Knockout Stage. When activated, <strong>all points (positive or negative) from that game are doubled.</strong></p>
+      <p>Chips must be declared <strong>before kick-off</strong> of the chosen match. No late calls.</p>
+      <ul>
+        <li>Chip #1 can only be used in the Group Stage (Matchdays 1–3)</li>
+        <li>Chip #2 can only be used in the Knockout Stage (R32 onwards)</li>
+        <li>Unused chips expire — they don't roll over</li>
+        <li>You cannot use both chips on the same team in the same game</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- NEW IDEAS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">New for 2026</p>
+    <h2 class="section-title">Fresh Ideas<br>to Steal</h2>
+    <p style="color:#8090A0; max-width:600px; font-size:15px; margin-bottom: 8px;">These are optional additions you can layer on to make the sweepstakes more fun, dramatic, and social.</p>
+
+    <div class="ideas-grid">
+
+      <div class="idea-card">
+        <span class="idea-emoji">🃏</span>
+        <h4>The Wildcard Joker</h4>
+        <p>Once per tournament (after the Group Stage), each player may swap one of their Knockout picks for any available team — paid for by spending 10 of their accumulated points. High risk, high reward.</p>
+        <span class="tag">Optional · Post-groups</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="idea-emoji">🎯</span>
+        <h4>Prediction Bonus</h4>
+        <p>Before the tournament, each player submits a secret envelope with their predicted tournament winner. If correct: +15 points. Runners-up prediction: +7 points. Semi-finalist: +3 points.</p>
+        <span class="tag">Optional · Pre-tournament</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="idea-emoji">💸</span>
+        <h4>Mid-Tournament Transfer Window</h4>
+        <p>After the Group Stage, open a one-hour "transfer window" in a group call. Players who finished bottom-half of the table at group stage can trade one of their knocked-out teams with another player for a fee of 5 points.</p>
+        <span class="tag">Optional · Fun &amp; social</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="idea-emoji">😈</span>
+        <h4>Curse Card</h4>
+        <p>Each player gets one Curse Card. Use it to give any opponent −5 points. But beware — you can only use it once, and others can target you. Best used on the leader. Creates chaos and drama.</p>
+        <span class="tag">Optional · Chaotic</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="idea-emoji">📊</span>
+        <h4>Live Leaderboard</h4>
+        <p>Maintain a WhatsApp-pinned or Google Sheets leaderboard that updates after every matchday. Seeing the standings in real-time keeps people engaged even when their teams aren't playing.</p>
+        <span class="tag">Recommended · Always-on</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="idea-emoji">🏅</span>
+        <h4>Side Wagers</h4>
+        <p>During knockouts, players can issue head-to-head wagers: "My Brazil beats your Germany to the quarters — loser buys the winner a beer." These are informal and purely for bragging rights.</p>
+        <span class="tag">Optional · Social</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Admin Guide</p>
+    <h2 class="section-title">Organiser Checklist</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-when">2–3 Weeks Before</div>
+        <div class="tl-title">Confirm Participants & Entry Fee</div>
+        <p>Lock in your ~10 players. Agree on the entry fee and prize structure. Collect fees upfront via UPI/cash.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">1 Week Before</div>
+        <div class="tl-title">Seed the Teams by FIFA Ranking</div>
+        <p>Pull the latest FIFA World Rankings and filter to the 48 qualified teams. Split into Top 16 and Bottom 32. Share the seeded list with players.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2–3 Days Before</div>
+        <div class="tl-title">Draft Night (Group Stage Picks)</div>
+        <p>Run the snake draft for Group Stage picks. Randomise order, pick Top Tier first, then reverse for Lower Tier. Collect prediction envelopes if using that option.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">During Group Stage</div>
+        <div class="tl-title">Track Points & Chip Declarations</div>
+        <p>Collect Super Chip declarations before each game via the group chat. Update leaderboard after every matchday.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">After Group Stage</div>
+        <div class="tl-title">Knockout Draft + Transfer Window</div>
+        <p>Run the Knockout picks draft. If using the Transfer Window feature, host a quick group call. Activate any Wildcards.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">Final Weekend</div>
+        <div class="tl-title">Final Scores & Prize Distribution</div>
+        <p>Calculate final totals. Open the prediction envelopes. Announce the winner and distribute prizes with appropriate theatre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIZE IDEAS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Prize Structure</p>
+    <h2 class="section-title">Suggested Prizes</h2>
+    <p style="color:#8090A0; max-width:580px; font-size:15px; margin-bottom: 8px;">For a 10-player sweepstakes at ₹500 entry (₹5,000 pot). Adjust as needed.</p>
+
+    <div class="prize-row">
+      <div class="prize-rank gold-rank">1</div>
+      <div class="prize-text">
+        <h5>🥇 Champion — ₹2,500</h5>
+        <p>50% of the pot. The glory, the bragging rights, the group chat crown emoji.</p>
+      </div>
+    </div>
+    <div class="prize-row">
+      <div class="prize-rank silver-rank">2</div>
+      <div class="prize-text">
+        <h5>🥈 Runner-Up — ₹1,500</h5>
+        <p>30% of the pot. Close, but no trophy.</p>
+      </div>
+    </div>
+    <div class="prize-row">
+      <div class="prize-rank bronze-rank">3</div>
+      <div class="prize-text">
+        <h5>🥉 Third Place — ₹500</h5>
+        <p>10% of the pot. At least you get your entry fee back.</p>
+      </div>
+    </div>
+    <div class="prize-row">
+      <div class="prize-rank" style="font-size:28px; color:#C0392B">💀</div>
+      <div class="prize-text">
+        <h5>Wooden Spoon — Buy the First Round</h5>
+        <p>Last place buys everyone the first round at the Final watch party. A proud tradition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK RULES REF -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Quick Reference</p>
+    <h2 class="section-title">The Rules,<br>Plain & Simple</h2>
+    <div class="rule-list">
+      <div class="rule-item"><p>Each player picks <strong>2 teams for the Group Stage</strong> — one from FIFA Top 16, one from the rest of the qualified field — via a snake draft.</p></div>
+      <div class="rule-item"><p>After the Group Stage, each player picks <strong>2 more teams for the Knockout Stage</strong>. You may re-pick a team you already hold.</p></div>
+      <div class="rule-item"><p>Scoring: <strong>+3 Win · +1 Draw · +1 per goal scored · −1 per goal conceded · +2 Clean Sheet bonus.</strong></p></div>
+      <div class="rule-item"><p>Knockout stage points are multiplied by the round: <strong>R32 ×1 · R16 ×1.5 · QF ×2 · SF ×3 · Final ×5.</strong></p></div>
+      <div class="rule-item"><p>Penalty shootouts: only the <strong>+3 win result</strong> applies. No goal/concede points counted for penalty kicks.</p></div>
+      <div class="rule-item"><p>Each player has <strong>2 Super Chips</strong> (one per stage). Declare before kick-off to double all points for that game — positive or negative.</p></div>
+      <div class="rule-item"><p>All picks, chip declarations, and optional power plays must be submitted <strong>before the relevant kick-off</strong>. Late submissions are void.</p></div>
+      <div class="rule-item"><p>The <strong>organiser's ruling is final</strong> on any disputes. Keep it fun.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p style="margin-bottom:8px;">Made for friends. Fuelled by football. ⚽</p>
+    <p>World Cup 2026 · USA · Canada · Mexico &nbsp;|&nbsp; <strong>Good luck, may the best picks win.</strong></p>
+  </div>
+</footer>
+
+</body>
+</html>
